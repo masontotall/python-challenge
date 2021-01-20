@@ -16,6 +16,10 @@ with open(csvpath) as csvfile:
     for row in csvreader:
         print(row)
 
+    csv_header= next(csvreader)
+    print(f'CSV Header: {csv_header}')
+    
+
 
 
 
