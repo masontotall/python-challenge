@@ -41,6 +41,7 @@ with open (csvpath) as csvfile:
     total_profit=0
     profit=0
     
+    
 
 
     for row in csvreader:
@@ -51,10 +52,16 @@ with open (csvpath) as csvfile:
             loss_sums = loss_sums + profit
         total_profit= profit_sums + loss_sums
         
+        
+       
+        
+
+        
     print("Financial Analysis")
     print("---------------------------------")
     print(f'"Total Months: {total_months}"')
     print(f'"Total Profits: {total_profit}"')
+    
 
     
 
