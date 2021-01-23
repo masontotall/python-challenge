@@ -13,12 +13,26 @@ with open(csvpath) as csvfile:
 
     csvreader=csv.reader(csvfile, delimiter=",")
 
+    csv_header = next(csvreader)
+    print(f'CSV Header: {csv_header}')
+
     for row in csvreader:
         print(row)
 
-    csv_header= next(csvreader)
-    print(f'CSV Header: {csv_header}')
     
+with open (csvpath) as csvfile:
+    csvreader=csv.reader(csvfile, delimiter=",")
+    
+    total_months = sum(1 for row in csvreader)
+    print(total_months)
+        
+
+
+
+
+
+
+
 
 
 
