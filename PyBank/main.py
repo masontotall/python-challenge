@@ -22,6 +22,8 @@ with open(csvpath) as csvfile:
     
 with open (csvpath) as csvfile:
     csvreader=csv.reader(csvfile, delimiter=",")
+
+    csv_header= next(csvreader)
     
     total_months = sum(1 for row in csvreader)
     print(total_months)
